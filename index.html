@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+.header {
+width: 100%;
+padding:15px;
+text-align: center;
+font-family: Bookman Old Style;
+color: #25383C;
+background-color:#E5E4E2;
+Margin: 0 auto; <!--aligns grid to center-->
+}
+
+.container {
+width:40%;
+background-color:#B5EAAA;
+padding:7px;
+position: absolute;
+left: 130px;
+}
+
+.containerreturn{
+width:40%;
+background-color:#B5EAAA;
+padding:7px;
+position: absolute;
+right: 130px;
+}
+
+
+
+.Outbound {
+    width: 95%;
+    padding: 15px;
+    border: 2px dashed #6D7B8D;
+	background-color:#E5E4E2;
+	font-family: Bookman Old Style;
+	float:Left; 
+	Margin:10px;
+}
+
+.Journeytype {
+    width: 95%;
+    padding: 10px;
+    border: 2px dashed #6D7B8D;
+	background-color:#E5E4E2;
+	font-family: Bookman Old Style;
+	float:Left; 
+	Margin:10px;
+}
+
+
+.Passengers {
+    width: 45%;
+    padding: 15px;
+    border: 1px solid black;
+	background-color:#E5E4E2;
+	border: 2px dashed #6D7B8D;
+	font-family: Bookman Old Style;
+	float:Left; 
+	Margin:10px;
+	
+	<!--Margin: 0 auto; <!--aligns grid to center-->
+}
+
+.Ticket {
+    width: 47%;
+    padding: 15px;
+	background-color:#E5E4E2;
+	border: 2px dashed #6D7B8D;
+	font-family: Bookman Old Style;
+	float:left; 
+	Margin:10px;
+	
+	<!--Margin: 0 auto; <!--aligns grid to center-->
+}
+
+
+
+.Return {
+    width: 95%;
+    padding: 15px;
+    border: 1px solid black;
+	background-color:#E5E4E2;
+	border: 2px dashed #6D7B8D;
+	font-family: Bookman Old Style;
+	float:left; 
+	Margin:10px;
+	<!--Margin: 0 auto; <!--aligns grid to center-->
+}
+
+
+.footer{
+width:98%;
+padding:20px;
+background-color:#E5E4E2;
+text-align:center;
+font-family: Bookman Old Style;
+position: absolute;
+bottom:10px;
+}
+
+
+
+.OrderNow{
+padding:20px;
+background-color:#33CCCC;
+text-align:center;
+font-family: Bookman Old Style;
+position: absolute;
+bottom:100px; 
+right:130px;
+border-style:solid;
+border-color:#484848;
+}
+
+.ClearButton{
+padding:20px;
+background-color:#FFFF33;
+text-align:center;
+font-family: Bookman Old Style;
+position: absolute;
+bottom:100px; 
+right:300px;
+border-style:solid;
+border-color:#484848;
+}
+
+
+</style>
+
+
+<head>
+
+<div class = "header">
+<h1>Please select your jounrney</h1>
+</div>
+
+</head>
+
+
+<body>
+
+<br>
+
+<div class = "container">
+
+<div class = "Outbound">
+<u><b>Outbound journey</u></b>
+
+<br>
+<br>
+
+<form>
+
+<table style="width:100%" align="center">
+
+<tr>
+<td>From:</td>
+<td>
+ <select>
+  <option value="Cardiff">Cardiff</option>
+  <option value="Bristol">Bristol</option>
+  <option value="Swansea">Swansea</option>
+  <option value="Bath">Bath</option>
+  <option value="London">London</option>
+  <option value="Wrexham">Wrexham</option>
+</select> 
+</td>
+<td>To:</td>
+<td>
+ <select>
+  <option value="Cardiff">Cardiff</option>
+  <option value="Bristol">Bristol</option>
+  <option value="Swansea">Swansea</option>
+  <option value="Bath">Bath</option>
+  <option value="London">London</option>
+  <option value="Wrexham">Wrexham</option>
+</select> 
+</td>
+
+<tr>
+<td>Date: </td>
+<td> <input type="date" name="date"> </td>
+<td>Time:</td>
+<td><input type = "time" name = "time"></td>
+</tr>
+
+ 
+</table>
+
+</form>
+
+
+</div>
+
+
+<div class = "Passengers">
+
+<u>Passengers</u>
+<br>
+<br>
+
+Adult <font size="1">(16+ years)</font>
+ <select>
+  <option value="0">0</option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+  <option value="7">7</option>
+  <option value="8">8</option>
+  <option value="9">9</option>
+  <option value="10">10</option>
+</select> 
+<br>
+<br>
+Child <font size ="1">(15 years and under)</font>
+ <select>
+  <option value="0">0</option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+  <option value="7">7</option>
+  <option value="8">8</option>
+  <option value="9">9</option>
+  <option value="10">10</option>
+</select> 
+
+
+</div>
+
+<div class = "Ticket">
+<u>Ticket Type</u>
+<br>
+<br>
+Standard
+ <select>
+  <option value="0">0</option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+  <option value="7">7</option>
+  <option value="8">8</option>
+  <option value="9">9</option>
+  <option value="10">10</option>
+</select> 
+<br>
+<br>
+First Class
+ <select>
+  <option value="0">0</option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+  <option value="7">7</option>
+  <option value="8">8</option>
+  <option value="9">9</option>
+  <option value="10">10</option>
+</select> 
+
+</div>
+
+<div class = "Journeytype">
+
+<u> Type of Journey </u><br><br>
+
+<table style="width:60%" align="left">
+
+<tr>
+<td>
+<input type="checkbox" name="Single">Single</td>
+<td><input type="checkbox" name="Return">Return</td>
+
+</table>
+</div>
+</div>
+
+<div class="containerreturn">
+
+<div class = "Return">
+
+<u><b>Return Journey</u></b>
+
+<br>
+<br>
+
+<form>
+
+<table style="width:100%" align="center">
+
+
+
+<tr>
+<td>From:</td>
+<td>
+ <select>
+  <option value="Cardiff">Cardiff</option>
+  <option value="Bristol">Bristol</option>
+  <option value="Swansea">Swansea</option>
+  <option value="Bath">Bath</option>
+  <option value="London">London</option>
+  <option value="Wrexham">Wrexham</option>
+</select> 
+</td>
+<td>To:</td>
+<td>
+ <select>
+  <option value="Cardiff">Cardiff</option>
+  <option value="Bristol">Bristol</option>
+  <option value="Swansea">Swansea</option>
+  <option value="Bath">Bath</option>
+  <option value="London">London</option>
+  <option value="Wrexham">Wrexham</option>
+</select> 
+</td>
+
+<tr>
+<td>Date: </td>
+<td> <input type="date" name="date"> </td>
+<td>Time:</td>
+<td><input type = "time" name = "time"></td>
+</tr>
+
+ 
+</table>
+
+</form>
+</div>
+
+<div class = "Passengers">
+
+<u>Passengers</u>
+<br>
+<br>
+
+Adult <font size="1">(16+ years)</font>
+ <select>
+  <option value="0">0</option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+  <option value="7">7</option>
+  <option value="8">8</option>
+  <option value="9">9</option>
+  <option value="10">10</option>
+</select> 
+<br>
+<br>
+Child <font size ="1">(15 years and under)</font>
+ <select>
+  <option value="0">0</option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+  <option value="7">7</option>
+  <option value="8">8</option>
+  <option value="9">9</option>
+  <option value="10">10</option>
+</select> 
+
+
+</div>
+
+<div class = "Ticket">
+<u>Ticket Type</u>
+<br>
+<br>
+Standard
+ <select>
+  <option value="0">0</option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+  <option value="7">7</option>
+  <option value="8">8</option>
+  <option value="9">9</option>
+  <option value="10">10</option>
+</select> 
+<br>
+<br>
+First Class
+ <select>
+  <option value="0">0</option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+  <option value="7">7</option>
+  <option value="8">8</option>
+  <option value="9">9</option>
+  <option value="10">10</option>
+</select> 
+
+</div>
+</div>
+
+</body>
+
+
+
+<div class = "OrderNow">
+Buy Tickets
+</div>
+
+<div class = "ClearButton">
+Start Again
+</div>
+
+<div class = "footer">
+
+/<b>Select your Journey</b>\ /Personal Details\ / Summary \ / Payment \
+
+
+</div>
+
+
+
+
+</html>
